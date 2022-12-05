@@ -1,18 +1,18 @@
 
 Feature: Login to the application
   I want to use this template for my feature file
+  
+  
+Scenario Outline: Login to app
+Given user is already on Login Page
+When user enters "<username>" and "<password>"
+And user clicks on login button
+Then user is on home page
 
 
-  #Scenario Outline: Login to app
-   #Given user is already on Login Page
-#When user enters "<username>" and "<password>"
-#And user clicks on login button
-#Then user is on home page
-#
-#
-#Examples:
-#	| username | password |
-#	| S0075  | Abc!@1 |
+Examples:
+	| username | password |
+	| S0075  | Abc!@1 |
 
 	
 	  Scenario Outline: Add Staff
